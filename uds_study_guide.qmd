@@ -484,3 +484,50 @@ Choice 4 of 4: The company that created COMPAS considered interpretable models, 
 ## Online AB Internal and External Validity
 
 
+**Q1 OEC**
+
+According to Kohavi, Tang and Xu, which of the following are desirable properties of an OEC?
+
+- [ ] It should be **sensitive** (I might say responsive) enough that your treatment will cause measurable changes in the outcome.
+- [ ] Changes in your OEC should be expected to causally impact your organization's achievement of its long-term objectives (e.g., you are confident an increase or decrease in OEC will contribute to your organization's long-term goals).
+- [ ] The measure should be **measurable** (in the context of where the experiment is being run) and **attributable** (you can readily associate treatment assignment with outcomes).
+- [ ] The measure should be **timely**, meaning it should respond to changes (like your treatment intervention) quickly enough that you don't need to wait forever to measure the effect you care about and make a decision.
+
+**ANSWER**:  all of them
+
+**Q2 OEC**
+
+Kohavi, Tang and Xu discuss Bing search's problems with using the number of distinct queries per search as an OEC (where a "search" is a distinct effort by a user to find something they want).
+
+Which of the following best characterizes the problem they identified?
+
+- ( ) Bing didn't have a way of figuring out how many distinct queries should be attributed to each "search."
+- ( ) Queries per search doesn't tell Bing anything about how much **revenue** they are making from searches. As an ad-revenue based company, they should be focused on ad revenue per search.
+- ( ) What the hell is Bing? (this option was funnier before chatGPT was integrated into Bing).
+- () When the quality of search results goes **down**, then in the short run people actually end up using the service more because they aren't getting good results (even though in the long run it drove people away from Bing). In other words, the OEC was causally related to the long-term goals of Bing.
+
+**ANSWERS**: When the quality of search results goes **down**, then in the short run people actually end up using the service more because they aren't getting good results (even though in the long run it drove people away from Bing). In other words, the OEC was causally related to the long-term goals of Bing.
+
+
+**Q3 AA Testing**
+
+A/A Testing is:
+
+- ( ) A critical tool for validating the internal validity of any a/b study in which you run an experiment without actually exposing anyone to your treatment and then look for differences across treatment arms.
+- ( ) A useful tool, but making sure there aren't differences in whatever observable characteristics you can measure across treatment and control conditions accomplishes the same thing.
+- ( ) A critical tool for validating the external validity of any a/b study in which expose users to the same treatment (a) twice to see if how they respond changes between the first and second exposure.
+- ( ) None of the above.
+
+**ANSWER**: A critical tool for validating the internal validity of any a/b study in which you run an experiment without actually exposing anyone to your treatment and then look for differences across treatment arms.
+
+
+**Q4 Primacy and Novelty Effects**
+
+What are the impacts of primacy and novelty effects on A/B experiments?
+
+- ( ) Primacy ("first" users) and novelty (new-feature-seeking users) effects are the distortions caused by the fact that when a new feature is released, a certain type of user is likely to find it and use it first, making the first people who use a new feature unrepresentative.
+- ( ) Primacy and novelty effects are types of SUTVA violations that undermine a study's internal validity.
+- ( ) Primacy effects (at the start of an experiment, users are accustomed ("primed") to the old version of a site/app and need time to learn the new site) will result in smaller treatment effects in the short run. Novelty effects (people interact with something just because it's new) will result in larger treatment effects in the short run than in the long run.
+- ( ) None of the above.
+
+**ANSWER**: Primacy effects (at the start of an experiment, users are accustomed ("primed") to the old version of a site/app and need time to learn the new site) will result in smaller treatment effects in the short run. Novelty effects (people interact with something just because it's new) will result in larger treatment effects in the short run than in the long run.

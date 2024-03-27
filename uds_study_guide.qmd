@@ -1,3 +1,18 @@
+---
+title: "UDS Midterm Study Guide"
+author: Yabei Zeng
+format:
+  pdf:
+    standalone: false
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    colorlinks: true
+    number-sections: true
+    number-depth: 3
+---
+\newpage
+
 # UDS Midterm Study Guide
 
 ## Proscriptive vs. Descriptive Questions

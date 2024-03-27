@@ -221,9 +221,31 @@ ul.task-list li input[type="checkbox"] {
 <li>neither <span class="math inline">\(E(Y^0_i|D_i=1)\)</span> nor <span class="math inline">\(E(Y^0_i|D_i=1)\)</span> are observable</li>
 </ul></li>
 </ul>
+<p>WHAT is <code>SUTVA</code>?</p>
+<ul>
+<li>The Stable Unit Treatment Value Assumption (SUTVA) is a fundamental principle in causal inference that assumes <code>the treatment given to one unit does not affect the outcomes of other units.</code> This assumption comprises three main ideas:
+<ul>
+<li><code>homogeneity of treatment effects</code>: each unit receives the same treatment effect</li>
+<li><code>No spillovers or externalities</code>: The treatment of one unit does not influence the outcomes of another unit.</li>
+<li><code>No general equilibrium effects</code>: The assumption that the treatment does not lead to broader systemic changes that could affect the outcomes.</li>
+</ul></li>
+</ul>
 </section>
 <section id="indicator-variables" class="level3">
 <h3 class="anchored" data-anchor-id="indicator-variables">Indicator Variables</h3>
+<p><code>Indicator variables</code> :sometimes referred to as dummy variables, takes values of 0 and 1, used to indicate whether a given observation belongs to a discrete category in a way that can be used in statistical models.</p>
+<ul>
+<li>the coefficient on an indicator variable is an estimate of the average <strong>DIFFERENCE</strong> in the dependent variable for the group identified by the indicator variable</li>
+<li>the <strong>REFERRENCE GROUP</strong>, is the set of observations for which the indicator variable is always zero.</li>
+<li>the coefficient on an indicator variable is an estimate of a <strong>DIFFERENCE</strong> with respect to a <strong>REFERENCE GROUP</strong></li>
+<li>For categorical variables with more than 2 categories, use <code>one-hot encoding</code></li>
+</ul>
+</section>
+<section id="experiment" class="level3">
+<h3 class="anchored" data-anchor-id="experiment">Experiment</h3>
+<section id="internal-validity" class="level4">
+<h4 class="anchored" data-anchor-id="internal-validity">Internal Validity</h4>
+</section>
 </section>
 </section>
 </section>

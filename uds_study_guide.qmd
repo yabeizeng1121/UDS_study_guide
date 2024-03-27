@@ -113,7 +113,26 @@
   - ATT = ATE when $E(Y_i^1 | D_i = 1) - E(Y_i^0 | D_i = 1) = E(Y_i^1 | D_i = 0) - E(Y_i^0 | D_i = 0)$, meaning no differential treatment effects
   - neither $E(Y^0_i|D_i=1)$ nor $E(Y^0_i|D_i=1)$ are observable
 
+WHAT is `SUTVA`?
+
+- The Stable Unit Treatment Value Assumption (SUTVA) is a fundamental principle in causal inference that assumes `the treatment given to one unit does not affect the outcomes of other units.` This assumption comprises three main ideas:
+  - `homogeneity of treatment effects`: each unit receives the same treatment effect
+  - `No spillovers or externalities`: The treatment of one unit does not influence the outcomes of another unit.
+  - `No general equilibrium effects`: The assumption that the treatment does not lead to broader systemic changes that could affect the outcomes.
+
 ### Indicator Variables
+
+`Indicator variables` :sometimes referred to as dummy variables, takes values of 0 and 1, used to indicate whether a given observation belongs to a discrete category in a way that can be used in statistical models.
+
+- the coefficient on an indicator variable is an estimate of the average **DIFFERENCE** in the dependent variable for the group identified by the indicator variable
+- the **REFERRENCE GROUP**, is the set of observations for which the indicator variable is always zero.
+- the coefficient on an indicator variable is an estimate of a **DIFFERENCE** with respect to a **REFERENCE GROUP**
+- For categorical variables with more than 2 categories, use `one-hot encoding`
+
+### Experiment
+#### Internal Validity
+
+
 
 
 

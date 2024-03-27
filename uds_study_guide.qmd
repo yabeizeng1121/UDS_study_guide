@@ -416,7 +416,71 @@ Choice 4 of 4: Because Internal Validity is more important than External Validit
 
 **ANSWER**: A given analysis can generally be said to have a certain level of Internal Validity, but there is no such thing as "a study's External Validity." External Validity is only defined with respect to a specific context.
 
+## Interpretable ML
+
+1. How do Internal and External Validity differ (according to the author)?
+
+Choice 1 of 4: Because Internal Validity is more important than External Validity, analyses should be designed to maximize Internal Validity first, and then look for ways to increase External Validity second.
+
+Choice 2 of 4: A given analysis can generally be said to have a certain level of Internal Validity, but there is no such thing as "a study's External Validity." External Validity is only defined with respect to a specific context.
+
+Choice 3 of 4: Internal Validity is the accuracy of an analysis conducted by a team that also collected the data. External Validity is the accuracy of an analysis conducted by a team that did not collect the data themselves but rather got it from another source.
+
+Choice 4 of 4: None of the above.
+
+**ANSWER**: A given analysis can generally be said to have a certain level of Internal Validity, but there is no such thing as "a study's External Validity." External Validity is only defined with respect to a specific context.
+
+2. In recent years, many companies have turned to AI tools to screen resumés to identify which job applicants to advance to interviews (UGH!). Not long after companies started rolling out these tools, many applicants realized they could game the system by adding keywords the models might be looking for in tiny font written in white (so a human wouldn't see them, but an NLP algorithm would).
+
+Note: this trick is known and doesn't work today.
+
+From the perspective of the data scientists who developed these tools, this behavior is an example of (select all that apply):
+
+Choice 1 of 5: Adverse selection.
+Choice 2 of 5: An external validity concern.
+Choice 3 of 5: None of the above.
+Choice 4 of 5: Adversarial users.
+Choice 5 of 5: An internal validity concern.
+
+**ANSWER**
+
+---
+
+An external validity concern.
+
+---
+
+Adversarial users
+
+---
+
+3. Which of the following is NOT true of an explainable black box model?
 
 
+Choice 1 of 4: These are all true of Black Boxes.
+
+Choice 2 of 4: Black box models usually outperform interpretable models, according to standard evaluation metrics. But interpretability should also be considered when choosing a metric, and so with you also take into account interpretability, interpretable models are often better.
+
+Choice 3 of 4: the explanations generated for the black box model must be wrong. They cannot have perfect fidelity with respect to the original model. If the explanation was completely faithful to what the original model computes, the explanation would equal the original model, and one would not need the original model in the first place, only the explanation. (In other words, this is a case where the original model would be interpretable.) This leads to the danger that any explanation method for a black box model can be an inaccurate representation of the original model in parts of the feature space.
+
+Choice 4 of 4: Explainability doesn't help address problems that arise when there are problems with input data, like when a typographical error results in an inmate getting an inaccurate risk assessment score
+
+**ANSWER**: Black box models usually outperform interpretable models, according to standard evaluation metrics. But interpretability should also be considered when choosing a metric, and so with you also take into account interpretability, interpretable models are often better.
+
+4. Rudin characterizes the COMPAS risk model as a black box model. In what way is the COMPAS risk model a black box?
+
+
+Choice 1 of 4: The model applies a neural network model to defendents' full criminal records, which can be designed in a manner that allows for some interpretability, but the specific framework used by the creators of COMPAS did not make use of these methods.
+
+Choice 2 of 4: The company that created it refuses to share the model because they argue it is a trade secret.
+
+Choice 3 of 4: None of the above — Rudin actually presents COMPAS precisely because it is a successfully deployed interpretable model.
+
+Choice 4 of 4: The company that created COMPAS considered interpretable models, but showed that best results were obtained from a boosted decision tree, and so have chosen to rely on that model instead.
+
+**ANSWER**: The company that created it refuses to share the model because they argue it is a trade secret.
+
+
+## Online AB Internal and External Validity
 
 

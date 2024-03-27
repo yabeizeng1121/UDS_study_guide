@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>uds_study_guide</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="uds_study_guide_files/libs/clipboard/clipboard.min.js"></script>
+<script src="uds_study_guide_files/libs/quarto-html/quarto.js"></script>
+<script src="uds_study_guide_files/libs/quarto-html/popper.min.js"></script>
+<script src="uds_study_guide_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="uds_study_guide_files/libs/quarto-html/anchor.min.js"></script>
+<link href="uds_study_guide_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="uds_study_guide_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="uds_study_guide_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="uds_study_guide_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="uds_study_guide_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="uds-midterm-study-guide" class="level1">
+<h1>UDS Midterm Study Guide</h1>
+<section id="proscriptive-vs.-descriptive-questions" class="level2">
+<h2 class="anchored" data-anchor-id="proscriptive-vs.-descriptive-questions">Proscriptive vs.&nbsp;Descriptive Questions</h2>
+<ul>
+<li>Descriptive Questions: Questions about the <strong>state of the world</strong> and about objective reality (have right or wrong answers) include the following examples:
+<ul>
+<li>“What kinds of users are clicking our ads?</li>
+<li>“Do high-income and low-income countries emit similar amounts of carbon dioxide?”</li>
+</ul></li>
+<li>Proscriptive Questions: Questions about <strong>how the world should be</strong> , don’t have right or wrong answers because answers to proscriptive questions require evaluating the desirability of possible outcomes, include the following examples:
+<ul>
+<li>“Should higher income and low income countries be expected to meet the same carbon emission reduction standards?”</li>
+<li>“Do high-income countries have a moral obligation to provide tuberculosis drugs to developing countries for free (or at cost)?”</li>
+</ul></li>
+</ul>
+</section>
+<section id="exploratory-questions" class="level2">
+<h2 class="anchored" data-anchor-id="exploratory-questions">Exploratory Questions</h2>
+<ul>
+<li>Using Exploratory Questions: questions about elicit information, questions about broader patterns in the world, could be answered by simple summary statistics or plots, answering the exploratory questions makes you understand the contours of the problem you seek to solve, include the following examples:
+<ul>
+<li>What type of buildings (industrial, residential, commercial) consume the most power in the US?</li>
+<li>In what region of the US are buildings consuming the most power?</li>
+<li>Is there a region of the US where buildings are generating the most CO2?</li>
+<li>Does the average energy use per building vary by region or building type?</li>
+<li>In what season is most building energy consumed? Is more energy consumed by heating or AC needs, or do the two use similar amounts of power?</li>
+</ul></li>
+</ul>
+<section id="internal-versus-external-validty" class="level3">
+<h3 class="anchored" data-anchor-id="internal-versus-external-validty">Internal versus External Validty</h3>
+<ul>
+<li>Internal validity: how well you have analyzed the data you have</li>
+<li>External validity: how well you expect the answer you generated from that data to generalize to your stakeholder’s context</li>
+<li>Internal validity concerns
+<ul>
+<li>Relate to your ability to properly characterize the causes of severe accidents in this data, accidents causes you generate from this data are meaning and faithful representations of the patterns in the data</li>
+<li>Concerns over the accuracy with which things are measured</li>
+</ul></li>
+<li>External Validty Concerns
+<ul>
+<li>New features rolls out, whether there was anything exceptional about the data generating process</li>
+</ul></li>
+<li>The more control one has over a study context, the more likely one is to have good internal validity, but that control can often create an artificially to limits external validity, Thus internal and external validity should not necessarily be thought of as things to try and simultaneously maximize at all costs, rather, they are best thought of as distinct features of analysis that should always be considered</li>
+</ul>
+</section>
+</section>
+<section id="passive-prediction-questions" class="level2">
+<h2 class="anchored" data-anchor-id="passive-prediction-questions">Passive Prediction Questions</h2>
+<ul>
+<li>Passive prediction questions: about <strong>the future or potential</strong> outcomes of individuals entities, including examples:
+<ul>
+<li>“How likely is patient X to experience a heart attack in the next two years?”</li>
+<li>“How likely is it that Mortgage Holder Y will fail to make their mortgage payment next month?”</li>
+</ul></li>
+<li>Passive Prediction don’t usually have “an answer”, need by considering the feasibility of developing a model to give individual-level answers to a Passive Prediction Question</li>
+<li>Differentiating between exploratory and passive prediction questions
+<ul>
+<li>Passive prediction questions focus on the values that get spit out of a model for each entity in the data, the only thing we care about in the passive prediction is <strong>the quality of these predictions</strong></li>
+<li>With exploratory question, our interest is in improving our understanding of the problem space</li>
+</ul></li>
+<li>Passive prediction and causal questions
+<ul>
+<li>Both questions are trying to predict future outcome</li>
+<li>The difference is that passive prediction are about make accurate prediction, not causal relationships that we can directly manipulate to shape outcomes (causal questions)</li>
+<li>Correlation does not necessarily imply causation</li>
+</ul></li>
+<li><strong>Internal validity and external validity</strong> in answering passive prediction questions
+<ul>
+<li>Internal validity: measure of how well a model captures the meaningful variation in the data we already have</li>
+<li>External validity: measure of how well we think that our model is likely to perform when faced with new data</li>
+<li>Some of the factors that influence the External Validity to Passive Prediction Questions are the same as those that shape the External Validity of Exploratory Question
+<ul>
+<li>Population represented in the data</li>
+<li>The time period in the questions</li>
+</ul></li>
+<li>Two external validity concern (different from exploratory questions):
+<ul>
+<li>Overfitting</li>
+<li>Adversarial users: attempt to subvert a statistical or machine learning model</li>
+</ul></li>
+</ul></li>
+<li>Not Using Black Box:
+<ul>
+<li>Problem with black box machine learning models: these models are used in high-stakes areas like <code>healthcare</code> and <code>criminal justice</code> but lack transparency, leading to severe consequences due to their inaccessibility and complexity</li>
+<li>Explanation towards the black box could be problematic, lacking fidelity and can be misleading</li>
+<li>Well-structured data with meaningful features can be equally well-predicted by simpler, interpretable models</li>
+</ul></li>
+<li>pyGAM
+<ul>
+<li>Generalized Additive Models(GAMs)
+<ul>
+<li><span class="math inline">\(g(\mathbb{E}[y|X]) = \beta_0 + f_1(X_1) + f_2(X_2, X_3) + \ldots + f_M(X_N)\)</span></li>
+<li><span class="math inline">\(X_1, X_2, …, X_N\)</span> are independent variables, and <span class="math inline">\(y\)</span> is the dependent variable</li>
+<li><span class="math inline">\(g()\)</span> is the link function</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="causal-questions" class="level2">
+<h2 class="anchored" data-anchor-id="causal-questions">Causal Questions</h2>
+<ul>
+<li>Causal questions: designed to help us predict the consequences of our actions</li>
+<li>Stakeholder will ask a causal question when they want to know whether an action may be beneficial</li>
+<li>An answer to causal questions will involve designing a study that not only measures the effect of treatment but also knows any measured effect will generalize to the stakeholder’s context.</li>
+<li>Internal and External Validity
+<ul>
+<li>Internal: the study itself in the context of studying</li>
+<li>External: The context in which the stakeholder wishes to generalize the result</li>
+</ul></li>
+<li>Answering causal questions:
+<ul>
+<li>An action X on an outcome Y</li>
+<li><code>Fundamental Problem of Causal Inference</code>: directly measure the causal effect of X on Y for a given entity</li>
+<li><code>Randomized experiment</code>: most familiar tool for answering causal questions
+<ul>
+<li>Randomized Control Trials (RCTs) or A/B Tests</li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="potential-outcomes-framework" class="level3">
+<h3 class="anchored" data-anchor-id="potential-outcomes-framework">Potential Outcomes Framework</h3>
+<ul>
+<li>T is the treatment, a binary treatment, meaning it can only take on two values : {0,1}</li>
+<li><span class="math inline">\(Y_i\)</span> is the potential outcome variable for i individual, <span class="math inline">\({Y_i}^1\)</span> is the treated potential outcome variable for i individual</li>
+<li>D is the observed receipt of either treatment or control, takes two values {0, 1}</li>
+<li>Given value of D, we will only be able to observe
+<ul>
+<li><span class="math inline">\(Y^0_i \text{ if } D_i = 0\)</span> or <span class="math inline">\(Y^1_i \text{ if } D_i = 1\)</span></li>
+</ul></li>
+<li>Defining the causal effect:
+<ul>
+<li><span class="math inline">\(\delta_i = Y_i^1 - Y_i^0\)</span></li>
+<li>The difference between the individual potential outcome</li>
+<li>This quantity is not able to observe</li>
+<li>For all individuals, the value is call ATE
+<ul>
+<li><span class="math inline">\(ATE = \frac{1}{N} \sum_{i \in 1,2,3...N}\delta_i\)</span></li>
+<li><span class="math inline">\(ATE = \frac{1}{N} \sum_{i \in 1,2,3...N} Y^1_i - Y^0_i\)</span></li>
+<li>If we assume our data is a random sample from the population, then we can write the ATE in the following form
+<ul>
+<li><span class="math inline">\(ATE = E(\delta_i)\)</span></li>
+<li><span class="math inline">\(ATE = E(Y^1_i - Y^0_i)\)</span></li>
+<li><span class="math inline">\(ATE = E(Y^1_i)-E(Y^0_i)\)</span></li>
+</ul></li>
+<li>The binary treatment
+<ul>
+<li><span class="math inline">\(E(Y^1_i|D_i = 1) - E(Y^0_i|D_i=0)\)</span></li>
+<li>This is a exact quantity you get from a linear regression of Y on D</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Correlation and Causation
+<ul>
+<li><span class="math inline">\(\hat{ATE} = E(Y^1_i|D_i = 1) - E(Y^0_i|D_i=0) + E(Y^0_i|D_i =1) -E(Y^0_i|D_i=1)\)</span></li>
+<li>because <span class="math inline">\(E(Y^0_i|D_i =1) -E(Y^0_i|D_i=1) = 0\)</span>, therefore <span class="math inline">\(\hat{ATE} = E(Y^1_i|D_i = 1) - E(Y^0_i|D_i=0)\)</span></li>
+<li>We can also write <span class="math inline">\(\hat{ATE}\)</span> as
+<ul>
+<li><span class="math inline">\(\hat{ATE} = E(Y^1_i|D_i=1)-E(Y^0_i|D_i=1) + E(Y^0_i|D_i=1)-E(Y^0_i|D_i=0)\)</span></li>
+<li>where <span class="math inline">\(E(Y^1_i|D_i=1)-E(Y^0_i|D_i=1)\)</span> is ATT</li>
+<li>and <span class="math inline">\(E(Y^0_i|D_i=1)-E(Y^0_i|D_i=0)\)</span> is the baseline difference</li>
+</ul></li>
+</ul></li>
+<li>Average Treatment Effect on the Treated (ATT)
+<ul>
+<li><span class="math inline">\(E(Y^1_i|D_i=1)-E(Y^0_i|D_i=1)\)</span></li>
+<li><span class="math inline">\(ATE = E(Y_i^1) - E(Y_i^0)\)</span></li>
+<li><span class="math inline">\(= \lambda \left( E(Y_i^1 | D_i = 1) - E(Y_i^0 | D_i = 1) \right) + (1 - \lambda) \left( E(Y_i^1 | D_i = 0) - E(Y_i^0 | D_i = 0) \right)\)</span></li>
+<li>where <span class="math inline">\(E(Y_i^1 | D_i = 1) - E(Y_i^0 | D_i = 1)\)</span> is the ATT (Average treatment effect on the treated)</li>
+<li>where <span class="math inline">\(E(Y_i^1 | D_i = 0) - E(Y_i^0 | D_i = 0)\)</span> is the average treatment effect on the untrated</li>
+<li>ATT = ATE when <span class="math inline">\(E(Y_i^1 | D_i = 1) - E(Y_i^0 | D_i = 1) = E(Y_i^1 | D_i = 0) - E(Y_i^0 | D_i = 0)\)</span>, meaning no differential treatment effects</li>
+<li>neither <span class="math inline">\(E(Y^0_i|D_i=1)\)</span> nor <span class="math inline">\(E(Y^0_i|D_i=1)\)</span> are observable</li>
+</ul></li>
+</ul>
+</section>
+<section id="indicator-variables" class="level3">
+<h3 class="anchored" data-anchor-id="indicator-variables">Indicator Variables</h3>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

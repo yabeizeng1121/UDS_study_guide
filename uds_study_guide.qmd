@@ -367,6 +367,54 @@ Choice 3 of 4: Aimovig's claims aren't based on an FDA approved clinical study. 
 
 Choice 4 of 4: They didn't report the standard errors associated with that estimate, and the standard errors are huge, making it virtually meaningless.
 
+**ANSWER** 3-4 days was the average treatment effect, but almost no patient experiences that effect. For most patients, the effect of Aimovig is much less or much greater.
+
+4. Which of the following is NOT one of the author's concerns about the term EDA?
+
+Choice 1 of 4: Its prevalence creates the misguided impression among students they need to invest in really "getting to know their data" before fitting a model, where students should really be focused on post-modeling diagnostics (e.g., residual plots) to catch errors.
+
+Choice 2 of 4: It devalues analyses not based on sophisticated statistical modeling.
+
+Choice 3 of 4: It conflates several distinct activities under a single name — learning the structure of your data, validating your data, and answering questions about the world without formal modeling.
+
+Choice 4 of 4: It creates the impression one can learn a lot about the world by "doing EDA" without first articulating a clear question on seeks to answer.
+
+**ANSWER**: Its prevalence creates the misguided impression among students they need to invest in really "getting to know their data" before fitting a model, where students should really be focused on post-modeling diagnostics (e.g., residual plots) to catch errors.
+
+5. Select all of the following questions that are Exploratory Questions.
+
+Choice 1 of 5: Using past performance indicators, market trends, and companies's financial reports, is it possible to forecast next year's profitability for different technology companies?
+Choice 2 of 5: Examining data from various schools, what patterns emerge in terms of student performance, extracurricular involvement, and socioeconomic background?
+Choice 3 of 5: Given data on an individual's lifestyle choices and genetic predispositions, can we anticipate the onset of a particular health issue accurately?
+Choice 4 of 5: Will the introduction of a new digital learning platform cause improvement in student achievement?
+Choice 5 of 5: Are employment rates better in US counties with younger populations?
+
+**ANSWER**: 
+
+---
+
+Examining data from various schools, what patterns emerge in terms of student performance, extracurricular involvement, and socioeconomic background?
+
+---
+
+Are employment rates better in US counties with younger populations?
+
+---
+
+
+## Exploratory and Descriptive/ Prescriptive Redux (only include the different one)
+
+1. How do Internal and External Validity differ (according to the author)?
+
+Choice 1 of 4: None of the above.
+
+Choice 2 of 4: Internal Validity is the accuracy of an analysis conducted by a team that also collected the data. External Validity is the accuracy of an analysis conducted by a team that did not collect the data themselves but rather got it from another source.
+
+Choice 3 of 4: A given analysis can generally be said to have a certain level of Internal Validity, but there is no such thing as "a study's External Validity." External Validity is only defined with respect to a specific context.
+
+Choice 4 of 4: Because Internal Validity is more important than External Validity, analyses should be designed to maximize Internal Validity first, and then look for ways to increase External Validity second.
+
+**ANSWER**: A given analysis can generally be said to have a certain level of Internal Validity, but there is no such thing as "a study's External Validity." External Validity is only defined with respect to a specific context.
 
 
 

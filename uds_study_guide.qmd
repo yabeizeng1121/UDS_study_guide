@@ -14,6 +14,36 @@ format:
 \newpage
 
 # UDS Midterm Study Guide
+## Intro Chapter
+
+### Solving Problems with Data: No Order
+- **Step (1) Specifying the Problem**
+- **Step (2) Solving Problems through Answering Questions**
+  - Types of Questions:
+    - **Exploratory Questions**: Questions about general patterns in the data
+      - Useful for understanding the problem space better and prioritizing subsequent efforts
+      - E.g.: how many job applicants are you receiving when you post a job?
+    - **Passive Prediction Questions**: Questions about likely outcomes for individual observations or entities
+      - Useful for targeting individuals for additional attention or interventions being considered
+      - E.g.: given the symptoms of this patient and their test results, how likely are they to develop complications after surgery?
+    - **Causal Questions**: Questions about the effect of actions or interventions being considered
+      - Useful for deciding on appropriate courses of action
+      - E.g.: what is the effect of an action X on an outcome Y? If I do X, how will Y change?
+      - Fundamental problem of causal inference: we can never perfectly know what the value of our outcome Y would be in both a world we do X and one where we don't do X
+
+### Problem Refinement & Stakeholder Management
+- **Step (0) Recognize your role**
+  - Helping your stakeholder better understand their problem is a core part of the job
+  - Data science is about pairing domain expertise with computational methods and quantitative insights
+- **Step (1) Don't assume your stakeholder knows what they need**
+- **Step (2) Abstract the problem**
+- **Step (3) Ask questions (Especially Quantitative Ones)**
+  - Questions about Success
+  - Questions about the Problem
+- **Step (4) Propose questions you might answer**
+  - Make your questions specific and actionable
+- **Step (5) Iterate**
+  - Bring your work back to your stakeholder as often as possible
 
 ## Proscriptive vs. Descriptive Questions
 

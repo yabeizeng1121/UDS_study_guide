@@ -156,7 +156,7 @@ format:
   - where $E(Y_i^1 | D_i = 1) - E(Y_i^0 | D_i = 1)$ is the ATT (Average treatment effect on the treated)
   - where $E(Y_i^1 | D_i = 0) - E(Y_i^0 | D_i = 0)$ is the average treatment effect on the untrated
   - ATT = ATE when $E(Y_i^1 | D_i = 1) - E(Y_i^0 | D_i = 1) = E(Y_i^1 | D_i = 0) - E(Y_i^0 | D_i = 0)$, meaning no differential treatment effects
-  - neither $E(Y^0_i|D_i=1)$ nor $E(Y^0_i|D_i=1)$ are observable
+  - neither $E(Y^0_i|D_i=1)$ nor $E(Y^1_i|D_i=0)$ are observable
 
 WHAT is `SUTVA`?
 
@@ -245,11 +245,13 @@ external validity: how well the results of an experiment can be generalized beyo
 
 - selection biases
 - situational factors
+- primary effects versus novelty effects (new features release, and users need time to adapt to it(primary), new features may attract new customers in short term (novelty))
 - interaction effects between experimental treatments and participants
 
 **Strategies for improving external validity**
 
 - using representative samples
+- plot over time (primary and novelty)
 - ensure the experimental setting closely mirros the real-world context
 - replicating studies in different settings
 
@@ -273,12 +275,97 @@ external validity: how well the results of an experiment can be generalized beyo
 
 
 
+\newpage
+
+# Quiz
+## Intro Chapter
+
+1. In the view of the author (me) of the chapter you read, what is the most important task for you, a data scientist, hoping to help your stakeholder? 
+   
+Choice 1of 4: Properly articulating the problem you are trying to solve.
+
+Choice 2 of 4: Providing results that are more accurate than what the stakeholder had before you were you hired.
+
+Choice 3 of 4: Leaving the stakeholder with a model that they know how to maintain and use effectively after you leave.
+
+Choice 4 of 4: None of these are the most important thing.
+
+**ANSWER** : Properly articulating the problem you are trying to solve.
+
+2. In the view of the author (me) of the chapter you read, what is the main/most common purpose of Exploratory Questions?
+
+Choice 1 of 4: To help you understand how variables in your dataset are coded and what variables are in the data.
+
+Choice 2 of 4: To help improve your understanding of the problem space and thus better prioritize subsequent efforts.
+
+Choice 3 of 4: To identify new markets for a business wishing to expand.
+
+Choice 4 of 4: None of these are what the author deems the main/most important purpose of Exploratory Questions.
+
+**ANSWER**: To help improve your understanding of the problem space and thus better prioritize subsequent efforts.
 
 
+3. Why is it critical you always progress from problem articulation to answering an Exploratory Question, then a Passive Prediction Question, then a Causal Question?
 
+Choice 1 of 4: It's critical that one start with problem articulation and answering an Exploratory Question, but you may sometimes skip answering a Passive Prediction Question before proceeding to answering a Causal Question.
 
+Choice 2 of 4: If you don't follow this order, your analysis will be harder to explain to stakeholders. This flow helps to ensure the "legibility" of your analysis to third parties.
 
+Choice 3 of 4: This order ensures you always work from the easiest task to the hardest, ensuring you don't waste time unnecessarily.
 
+Choice 4 of 4: It's not critical you proceed in that order. While problem articulation should always be the first thing you do, and there is sometimes a natural flow from Exploratory to Passive Prediction to Causal Questions, in practice data science projects will almost never flow mechanically from one to the other.
+
+**ANSWER**: It's not critical you proceed in that order. While problem articulation should always be the first thing you do, and there is sometimes a natural flow from Exploratory to Passive Prediction to Causal Questions, in practice data science projects will almost never flow mechanically from one to the other.
+
+4. What is the difference between a Passive Prediction Question and a Causal Question?
+  
+Choice 1 of 4: A Passive Prediction Question is a question about the future, while a Causal Question is about what caused something to happen in the past.
+
+Choice 2 of 4: They are different terms for the same thing.
+
+Choice 3 of 4: A Causal Question is a question about how the world would be different if a certain action took place (usually an action that you or your stakeholder is thinking about undertaking). A Passive Prediction Question is a question about how things are likely to proceed if the status quo prevails.
+
+Choice 4 of 4: Causal Questions are always harder to answer than Passive Prediction Questions.
+
+**ANSWER**: A Causal Question is a question about how the world would be different if a certain action took place (usually an action that you or your stakeholder is thinking about undertaking). A Passive Prediction Question is a question about how things are likely to proceed if the status quo prevails.
+
+## Exploratory and Descriptive / Prescriptive
+
+1. Why is it critical you always progress from problem articulation to answering an Exploratory Question, then a Passive Prediction Question, then a Causal Question?
+
+Choice 1 of 4: This order ensures you always work from the easiest task to the hardest, ensuring you don't waste time unnecessarily.
+
+Choice 2 of 4: If you don't follow this order, your analysis will be harder to explain to stakeholders. This flow helps to ensure the "legibility" of your analysis to third parties.
+
+Choice 3 of 4: It's critical that one start with problem articulation and answering an Exploratory Question, but you may sometimes skip answering a Passive Prediction Question before proceeding to answering a Causal Question.
+
+Choice 4 of 4: It's not critical you proceed in that order. While problem articulation should always be the first thing you do, and there is sometimes a natural flow from Exploratory to Passive Prediction to Causal Questions, in practice data science projects will almost never flow mechanically from one to the other.
+
+**ANSWER**: It's not critical you proceed in that order. While problem articulation should always be the first thing you do, and there is sometimes a natural flow from Exploratory to Passive Prediction to Causal Questions, in practice data science projects will almost never flow mechanically from one to the other.
+
+2. Which of the following is a Prescriptive Question about marijuana (also known, in various circles, as weed, pot, cannabis, ganja, Mary Jane, and of course, best of all, the Devil's Lettuce)?
+
+Choice 1 of 5: Is marijuana legalization likely to generate tax revenue for local governments?
+
+Choice 2 of 5: Is it a good idea to legalize recreational marijuana?
+
+Choice 3 of 5: Does marijuana use lead to use of other drugs like heroin or cocaine?
+
+Choice 4 of 5: None of these are Prescriptive Questions.
+
+Choice 5 of 5: Does recreational marijuana legalization cause violent crime?
+
+**ANSWER**: Is it a good idea to legalize recreational marijuana?
+
+3. According to the author of the reading (me!), what's wrong with advertisements reporting Aimovig "caused episodic migraine sufferers to experience 3-4 fewer days of migraines a month"?
+
+Choice 1 of 4: 3-4 days was the average treatment effect, but almost no patient experiences that effect. For most patients, the effect of Aimovig is much less or much greater.
+
+Choice 2 of 4: Aimovig wasn't actually designed to treat migraines. The clinical trial was designed to measure it's effect on regular headaches, but it didn't work, so the Pharmaceutical company dug through the data till they found an outcome — migraines — for which it had an effect, then called that their target.
+
+Choice 3 of 4: Aimovig's claims aren't based on an FDA approved clinical study. Amgen conducted an observational study to get that number, not a controlled experiment, and you can't make causal medical claims without a randomized clinical trial.
+
+Choice 4 of 4: They didn't report the standard errors associated with that estimate, and the standard errors are huge, making it virtually meaningless.
 
 
 

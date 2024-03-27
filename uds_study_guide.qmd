@@ -145,9 +145,100 @@ WHAT is `SUTVA`?
 - For categorical variables with more than 2 categories, use `one-hot encoding`
 
 ### Experiment
+#### A/B testing
+
+A/B testing: two versions, and see which one performs better, includes the following steps:
+
+- Identify the goal
+- Create variants: two versions to be tested
+- Split the audience: one group sees version A, and the other sees version B 
+- Collect the data
+- Analyze results
+- Make decisions
+
+**Twyman's Law**: interesting or different results are often mistaken and emphasizes the need for skepticism and thorough verification of experiment data
+
+- implications in Data Analysis:
+  - error checking
+  - skepticism
+  - verification
+- application in research and experimentation
+  - design robustness
+  - reproducibility
+  - result interpretation
+
+#### Overall Evaluation Criteria (OEC)
+
+OEC: metrics used to measuer the success of an experiment and determine whether the tested changed have achieved the desired outcome
+
+- **Selection of OEC**: The right OEC involves the followings
+  - considerinf the goals of the experiment
+  - the expected impact of the changes
+  - how success will be measured
+
+- **Balance between short-term and long-term goals**
+  - the balance should consider how changes might affect user behavior or business metrics over time
+
+#### A/A Testing
+**Purpose/Definition**: running two identical versions of a product or feature against each other to check the testing infrastructure's accuracy and to detect any biases or errors before conducting actual A/B tests
+
+Through AA testing, a baseline for normal performance variation without experimental changes is established. The baseline is used for comparision in sebsequent A/B tests to measure the impact of changes accurately
+
 #### Internal Validity
 
+Internal Validity: an experiment accurately establishes a causal relationship between the independent and dependent variabkes, ensuring the results are due to the manipulated variables and not other factors
 
+**Threats to internal validity**
+
+- selection bias
+- history effect (external events affecting outcomes)
+- maturation (participants changing over time)
+- instrumentation changes (differences in measurement tools or procedures)
+  
+**Strategies for improving internal validity**
+
+- random assignment to control and treatment groups
+- controlling external variables
+- using blinding methods
+- ensuring consistent measurement techniques throughout the experiment
+
+#### External Validity
+external validity: how well the results of an experiment can be generalized beyond the specific conditions of the study
+
+**Factors affecting external validity**
+
+- sample characteristics
+- experimental setting
+- the context of which the experiment is conducted
+
+**Threats to external validity**
+
+- selection biases
+- situational factors
+- interaction effects between experimental treatments and participants
+
+**Strategies for improving external validity**
+
+- using representative samples
+- ensure the experimental setting closely mirros the real-world context
+- replicating studies in different settings
+
+
+
+### Power Calculations 
+
+- **Statistical Power and Type II Errors**: defines statistical power as the probability of correctly rejecting a false null hypothesis and explains Type II errors (false negatives)
+- **calculating sample size**: discusses how to compute the sample size needed to achieve desired power and control type I (false positives) and Type II error rates
+- **Errors in Hypothesis Testing**: 
+  - True Positive (Correct Rejection of Null Hypothesis): The test correctly rejects the null hypothesis when it is false. This means that there is a real effect, and the test has successfully detected it.
+  - True Negative (Correct Acceptance of Null Hypothesis): The test correctly fails to reject the null hypothesis when it is true. This means that there is no real effect, and the test correctly identifies that there is no significant difference or effect.
+  - Type I Error (False Positive): The test incorrectly rejects the null hypothesis when it is actually true. This means the test indicates there is an effect when there isn't one, leading to a false alarm.
+  - Type II Error (False Negative): The test incorrectly fails to reject the null hypothesis when it is actually false. This means the test fails to detect a real effect, missing the discovery of an actual difference or effect.
+- **Type II Error Rate ($\beta$)**: the probability of not detecting a true effect when it exists, decreases with larger sample sizes or greater effect sizes
+- **Trade-offs in Testings**: the inverse relationship between Type I and Type II errors and the necessity of balancing sensitivity (power) against the risk of false positives.
+- **Effect Size**: statistical power depends on the specified effect size, larger effects are easier to detct
+- **Sample Size**: influenced by desired power, siginificance level (Type I error rate), and the minimum effect szie of interest
+- **Minimum Effect of Interest (MEI)**: drive the design of an experiment based on the smallest practical effect size that would be meaningful to detect
 
 
 
